@@ -25,7 +25,7 @@ public class Main {
                     .graphite(g -> g
                         .enable()
                         .reporterInterval(java.time.Duration.ofSeconds(1))
-                        .sender(new Graphite(new InetSocketAddress("192.168.99.100", 2003)))
+                        .sender(new Graphite(new InetSocketAddress("172.21.37.102", 2003)))
                         .prefix("dropwizardtest."))
                     .console(con -> con
                         .enable(true)
